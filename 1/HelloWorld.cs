@@ -1,5 +1,5 @@
 using System;
-class Temp{
+class HelloWorld{
     static void Main(){
         Console.WriteLine("Hello World");
     }
