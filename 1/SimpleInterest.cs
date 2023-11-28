@@ -1,3 +1,5 @@
+using System;
+
 class SimpleInterest{
     public void Interest(){
         Console.Write("Enter Princial: ");
