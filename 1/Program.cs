@@ -6,5 +6,7 @@
         // sm.Sum();
 
         // Simple Interest
+        SimpleInterest si=new SimpleInterest();
+        si.Interest();
     }
 }

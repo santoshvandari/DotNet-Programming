@@ -1,11 +1,11 @@
 class SimpleInterest{
-    public void Main(){
+    public void Interest(){
         Console.Write("Enter Princial: ");
         int p=Convert.ToInt32(Console.ReadLine());
         Console.Write("Enter Time: ");
         int t=Convert.ToInt32(Console.ReadLine());
         Console.Write("Enter Rate: ");
-        float r = Convert.ToDouble(Console.WriteLine());
-
+        float r = Convert.ToSingle(Console.ReadLine());
+        Console.WriteLine("Simple Interst: "+((p*t*r)/100));
     }
 }
