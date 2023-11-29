@@ -1,5 +1,5 @@
 using System;
-class IfElse{
+class IfElseIf{
     static void Main(){
         int num;
         Console.Write("Enter a Number: ");
