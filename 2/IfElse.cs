@@ -11,7 +11,7 @@ class IfElse{
         }else if (num%7==0){
             Console.WriteLine("{0} is Divisible By 7",num);
         }else{
-            Console.WriteLine("{0} Not Divisioble by 3 and 7.",num)
+            Console.WriteLine("{0} Not Divisioble by 3 and 7.",num);
         }
 
     }
