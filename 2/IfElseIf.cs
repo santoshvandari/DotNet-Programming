@@ -13,6 +13,5 @@ class IfElseIf{
         }else{
             Console.WriteLine("{0} Not Divisioble by 3 and 7.",num);
         }
-
     }
 }
