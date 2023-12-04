@@ -2,6 +2,10 @@ using System;
 class ParasParameter{
     static void Sum(params int[] arr){
         int sum=0;
+        foreach(int data in arr){
+            sum+=data;
+        }
+        Console.WriteLine($"Sum : {sum}");
 
     }
     static void Main(){
