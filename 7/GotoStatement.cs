@@ -1,4 +1,4 @@
-using System
+using System;
 class GotoStatement{
     static void Main(){
         label:
@@ -6,8 +6,8 @@ class GotoStatement{
             Console.WriteLine("i= {0}",i);
         }
         Console.WriteLine("Do You Want to Run Again(y/n):");
-        char ch = Console.ReadLine();
-        if(ch=='y')
+        string ch = Console.ReadLine();
+        if(ch=="y" || ch == "Y")
             goto label;
         
     }
