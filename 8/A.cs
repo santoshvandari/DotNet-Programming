@@ -1,7 +1,7 @@
 using System;
 namespace Bca{
-class A{
-    void Fact(){
+public class A{
+    public void Fact(){
         int n=5,fact=1;
         for(int i=1;i<=n;i++)
             fact*=i;
