@@ -6,7 +6,7 @@ namespace Greet{
             this.name=name;
         }
         public void Greet(){
-            Console.WriteLine("Welcome to C# World!!!");
+            Console.WriteLine("Welcome {0} in the WOrld of C#",this.name);
         }
     }
 }
