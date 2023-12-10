@@ -9,5 +9,7 @@ class Delegates2{
     }
     static void Main(){
         MyDel del = new MyDel(Sum);
+        del+=Diff;
+        del(30,10);
     }
 }
