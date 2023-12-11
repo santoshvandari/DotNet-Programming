@@ -4,7 +4,7 @@ class FunctionDelegates{
         Console.WriteLine($"Sum of {x} and {y} is {(x+y)}");
     }
     static void Main(){
-        Sum(20,10);
-
+        Action<int,int> act = Sum;
+        act(10,20);
     }
 }
