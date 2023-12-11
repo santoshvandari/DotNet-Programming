@@ -1,5 +1,5 @@
 using System;
-class FunctionDelegates{
+class ActionDelegate{
     static void Sum(int x, int y){
         Console.WriteLine($"Sum of {x} and {y} is {(x+y)}");
     }
