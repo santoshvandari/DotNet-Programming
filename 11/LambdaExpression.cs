@@ -1,8 +1,8 @@
 using System;
-class LambdaExpression{
+class ExpressionLambda{
+    static int Sum(int x , int y)=>x+y;
     static void Main(){
-        var sum=(a,b)=>a+b;
-        Console.WriteLine("Sum : {0}",(sum(5,10)));
-        
+        int res = Sum(10,20);
+        Console.WriteLine("Sum : {0}",res);
     }
 }
