@@ -7,6 +7,7 @@ class IndexOutOfRangeEx{
             arr[2]=3;
         }catch(IndexOutOfRangeException ex){
             Console.WriteLine(ex);
+            Console.WriteLine("Error Occured");
         }
     }
 }
