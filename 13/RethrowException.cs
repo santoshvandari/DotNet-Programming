@@ -13,6 +13,7 @@ class ThrowKeyword{
             }
         }catch(ArithmeticException ex){
             Console.WriteLine(ex);
+            throw;
         }
     }
 }
