@@ -1,5 +1,5 @@
 using System;
-class ThrowKeyword{
+class RethrowException{
     static void Main(){
         int cp,sp,profit;
         Console.WriteLine("Enter CP and SP: ");
