@@ -24,8 +24,8 @@ class LINQData1{
         list.Add(new Employee(104,"Sita","BRT",22,30000.00));
         // Filtering the Data    
         var filtered=from x in list
-            where x.age=22
-            select x;
+                    where x.age=22
+                    select x;
         // Displaying All the Records 
         Console.WriteLine("Eid\tName\tAddress\tAge\tSalary");
         foreach (var item in filtered){
