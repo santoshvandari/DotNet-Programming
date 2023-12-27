@@ -22,12 +22,13 @@ class LINQData1{
         list.Add(new Employee(102,"Hari","KVT",21,20000.00));
         list.Add(new Employee(103,"Krishna","KTM",28,29000.00));
         list.Add(new Employee(104,"Sita","BRT",22,30000.00));
+        // Filtering the Data    
+        var filtered=from x in list
+            where x.age=22
+            select x;
         // Displaying All the Records 
         Console.WriteLine("Eid\tName\tAddress\tAge\tSalary");
-        var filtered=from x in list
-            where list.address==22
-            select x;
-        foreach (var item in list){
+        foreach (var item in filtered){
             Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.eid,item.name,item.address,item.age,item.salary);
         }
 
