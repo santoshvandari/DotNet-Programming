@@ -20,9 +20,12 @@ class LINQData3{
         list.Add(new Student(103,"Kushal","BTM",25));
         list.Add(new Student(104,"Manoj","KTM",28));
         list.Add(new Student(105,"Kiran","KVT",22));
-
+        var res=from x in list
+                where x.age>22
+                orderby x.name
+                select x;
         Console.WriteLine("Sid\tName\tAddress\tAge");
-        foreach(var data in list){
+        foreach(var data in res){
             Console.WriteLine("{0}\t{1}\t{2}\t{3}",data.sid,data.name,data.address,data.age);
         }
 
