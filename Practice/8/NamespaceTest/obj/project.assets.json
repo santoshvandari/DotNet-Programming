@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/wabisabi/Desktop/BCA Practical/DotNet/8/NamespaceTest/NamespaceTest.csproj",
+      "projectUniqueName": "/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/8/NamespaceTest/NamespaceTest.csproj",
       "projectName": "NamespaceTest",
-      "projectPath": "/home/wabisabi/Desktop/BCA Practical/DotNet/8/NamespaceTest/NamespaceTest.csproj",
+      "projectPath": "/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/8/NamespaceTest/NamespaceTest.csproj",
       "packagesPath": "/home/wabisabi/.nuget/packages/",
-      "outputPath": "/home/wabisabi/Desktop/BCA Practical/DotNet/8/NamespaceTest/obj/",
+      "outputPath": "/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/8/NamespaceTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/wabisabi/.nuget/NuGet/NuGet.Config"
