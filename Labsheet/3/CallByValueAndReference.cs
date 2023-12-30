@@ -10,6 +10,10 @@ class CallByValueAndReference{
         a=10;
     }
     static void Main(){
-
+        int a=5;
+        ByValue(a);
+        Console.WriteLine("After By Value : {0}",a);
+        ByReference(ref a);
+        Console.WriteLine("After By Reference : {0}",a);
     }
 }
