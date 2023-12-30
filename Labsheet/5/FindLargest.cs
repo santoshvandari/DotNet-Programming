@@ -10,7 +10,7 @@ class FindLargest{
         return max;
     }
     static void Main(){
-        int[] arr = {10,22,13,144,50};
+        int[] arr = {10,22,13,144,50,150,142,155,10,15};
         Console.WriteLine("Largest : {0}",Largest(arr));
     }
 }
