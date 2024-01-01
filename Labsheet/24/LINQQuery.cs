@@ -9,8 +9,21 @@ Now write LINQ query for the following:
 using System;
 using System.Linq;
 using System.Collections.Generic;
+class Employee{
+    int id,age;
+    double salary;
+    string name,address;
+    public Employee(int id,string name,int age,string address,double salary){
+        this.id=id;
+        this.name=name;
+        this.age=age;
+        this.address=address;
+        this.salary=salary;
+    }
+}
 class LINQQuery{
     static void Main(){
-        
+        List<Employee> list = new Employee<Employee>();
+
     }
 }
