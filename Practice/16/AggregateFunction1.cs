@@ -24,14 +24,16 @@ class AggregateFunction1{
         list.Add(new Employee(102,"Hari","KVT",21,20000.00));
         list.Add(new Employee(103,"Krishna","KTM",28,29000.00));
         list.Add(new Employee(104,"Sita","BRT",22,30000.00));
-        // Filtering the Data    
-        var filtered=from x in list
-                    where x.age==22
-                    orderby x.name ascending
+        // Select he Records of Employee whose salary is greater than average salary.
+        var res=from x in list
+                    where x.salary>(
+                        from y in list 
+                        select y.salary
+                    ).Average()
                     select x;
         // Displaying All the Records 
         Console.WriteLine("Eid\tName\tAddress\tAge\tSalary");
-        foreach (var item in filtered){
+        foreach (var item in res){
             Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.eid,item.name,item.address,item.age,item.salary);
         }
     }
