@@ -21,7 +21,7 @@ class Employee{
         this.salary=salary;
     }
 }
-class LINQQuery{
+class LINQQuery1{
     static void Main(){
         List<Employee> list = new Employee<Employee>();
         list.Add(new Employee(1,"ROhit",25,"KTM",20000));
@@ -30,6 +30,13 @@ class LINQQuery{
         list.Add(new Employee(4,"Rahul",40,"BRT",50000));
         list.Add(new Employee(5,"Krishna",45,"BTM",30000));
         //Select name and age of employees whose salary is greater than 20000 and age is less than 35.
+        var res1 = from x in list
+                    where x.salary>20000 && x.age<35
+                    select new{x.name,x.age};
+        
+        foreach (var item in collection){
+            
+        }
 
 
     }
