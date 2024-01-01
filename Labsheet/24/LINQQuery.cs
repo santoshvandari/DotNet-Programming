@@ -70,6 +70,29 @@ class LINQQuery1{
         //     Console.WriteLine("{0}\t{1}",item.id,item.name);
         // }
 
+        // Select id and name of employees whose address is Btm and salary is greater than average salary of employees.
+        var res5 = from x in list
+                    where x.address=="BTM" && x.salary>(
+                        from y in list
+                        select y.salary
+                    ).Average()
+                    select new{x.id,x.name};
+        Console.WriteLine("Id and Name of Employees whose address = Btm and salary > average");
+        foreach (var item in res5){
+            Console.WriteLine("{0}\t{1}",item.id,item.name);
+        }
+
+        // Select records of employee group by address in ascending order based on age.
+        var res6 = from x in list
+                    orderby x.age ascending
+                    group x by x.address;
+        Console.WriteLine("Records of Employee group by address in ascending order based on age:");
+        foreach (var items in res6){
+            Console.WriteLine("Address: {0}",items.Key);
+            foreach (var item in items){
+                Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
+            }
+        }
 
 
     }
