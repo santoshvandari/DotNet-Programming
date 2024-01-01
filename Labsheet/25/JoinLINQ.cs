@@ -3,8 +3,8 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 class Student{
-    int sid,cid;
-    string sname,address;
+    public int sid,cid;
+    public string sname,address;
     public Student(int sid,string sname,string address,int cid){
         this.sid=sid;
         this.sname=sname;
@@ -13,8 +13,8 @@ class Student{
     }
 }
 class Course{
-    int cid;
-    string cname;
+    public int cid;
+    public string cname;
     public Course(int cid,string cname){
         this.cid=cid;
         this.cname=cname;
@@ -35,10 +35,11 @@ class JoinLINQ{
         var res = from x in std
                     join y in crs
                     on x.cid equals y.cid
-                    select new{x.name,y.course};
+                    where y.cname=="C#"
+                    select new{x.sname,y.cname};
         Console.WriteLine("Name\tCourse");
         foreach (var data in res){
-            Console.WriteLine("{0}\t{1}",data.name,data.course);
+            Console.WriteLine("{0}\t{1}",data.sname,data.cname);
         }
 
     }
