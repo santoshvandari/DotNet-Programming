@@ -1,5 +1,5 @@
 // Write a C# program to demonstrate Join using LINQ.
-using system;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 class Student{
@@ -22,6 +22,24 @@ class Course{
 }
 class JoinLINQ{
     static void Main(){
-        
+        List<Student> std=new List<Student>();
+        std.Add(new Student(1,"Rahul","KTM",1));
+        std.Add(new Student(2,"Raj","KVT",2));
+        std.Add(new Student(3,"Ravi","BTM",1));
+        std.Add(new Student(4,"Rahul","BRT",3));
+        std.Add(new Student(5,"KRishna","BTM",2));
+        List<Course> crs=new List<Course>();
+        crs.Add(new Course(1,"C#"));
+        crs.Add(new Course(2,"Java"));
+        crs.Add(new Course(3,"Python"));
+        var res = from x in std
+                    join y in crs
+                    on x.cid equals y.cid
+                    select new{x.name,y.course};
+        Console.WriteLine("Name\tCourse");
+        foreach (var data in res){
+            Console.WriteLine("{0}\t{1}",data.name,data.course);
+        }
+
     }
 }
