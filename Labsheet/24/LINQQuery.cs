@@ -31,44 +31,44 @@ class LINQQuery1{
         list.Add(new Employee(5,"Krishna",45,"BTM",30000));
 
         // //Select name and age of employees whose salary is greater than 20000 and age is less than 35.
-        // var res1 = from x in list
-        //             where x.salary>20000 && x.age<35
-        //             select new{x.name,x.age};
-        // Console.WriteLine("Name And Age of Employees whose salary is greater than 20000 and age is less than 35");
-        // foreach (var item in res1){
-        //     Console.WriteLine("{0}\t{1}",item.name,item.age);
-        // }
+        var res1 = from x in list
+                    where x.salary>20000 && x.age<35
+                    select new{x.name,x.age};
+        Console.WriteLine("Name And Age of Employees whose salary is greater than 20000 and age is less than 35");
+        foreach (var item in res1){
+            Console.WriteLine("{0}\t{1}",item.name,item.age);
+        }
 
         // // Select all records of employees whose name starts with letter ‘R’ and age greater than 25 in descending order based on age.
-        // var res2 = from x in list
-        //             where x.name.StartsWith("R") && x.age>25
-        //             orderby x.age descending
-        //             select x;
-        // Console.WriteLine("Records of Employee whose name starts with letter ‘R’ and age greater than 25 in descending order based on age:");
-        // foreach (var item in res2){
-        //     Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
-        // }
+        var res2 = from x in list
+                    where x.name.StartsWith("R") && x.age>25
+                    orderby x.age descending
+                    select x;
+        Console.WriteLine("Records of Employee whose name starts with letter ‘R’ and age greater than 25 in descending order based on age:");
+        foreach (var item in res2){
+            Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
+        }
         
         // Select all records of employee whose salary is maximum.
-        // var res3 = from x in list
-        //             where x.salary==(
-        //                 from y in list
-        //                 select y.salary
-        //             ).Max()
-        //             select x;
-        // Console.WriteLine("Records of Employee whose salary is maximum:");
-        // foreach (var item in res3){
-        //     Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
-        // }
+        var res3 = from x in list
+                    where x.salary==(
+                        from y in list
+                        select y.salary
+                    ).Max()
+                    select x;
+        Console.WriteLine("Records of Employee whose salary is maximum:");
+        foreach (var item in res3){
+            Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
+        }
 
         // Select id and name of employee whose salary is between 20000 and 30000.
-        // var res4 = from x in list
-        //             where x.salary>=20000 && x.salary<=30000
-        //             select new{x.id,x.name};
-        // Console.WriteLine("Id and Name of Employee whose salary is between 20000 and 30000:");
-        // foreach (var item in res4){
-        //     Console.WriteLine("{0}\t{1}",item.id,item.name);
-        // }
+        var res4 = from x in list
+                    where x.salary>=20000 && x.salary<=30000
+                    select new{x.id,x.name};
+        Console.WriteLine("Id and Name of Employee whose salary is between 20000 and 30000:");
+        foreach (var item in res4){
+            Console.WriteLine("{0}\t{1}",item.id,item.name);
+        }
 
         // Select id and name of employees whose address is Btm and salary is greater than average salary of employees.
         var res5 = from x in list
