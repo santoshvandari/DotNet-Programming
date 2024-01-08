@@ -9,7 +9,7 @@ class Program{
         MySqlCommand cmd = new MySqlCommand(query,conn);
         cmd.ExecuteNonQuery();
         // Console.WriteLine("Data Inserted");
-        // Console.WriteLine("Data Inserted");
+        Console.WriteLine("Data Updated Successfully");
         conn.Close();
     }
 }
