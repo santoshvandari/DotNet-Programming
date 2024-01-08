@@ -9,12 +9,15 @@ class Program{
         MySqlDataReader data = cmd.ExecuteReader();
         Console.WriteLine("Roll\tName\tAddress");
         while(data.Read()){
-            int roll=data.GetInt32("roll");
-            string name=data.GetString("name");
-            string address=data.GetString("address");   
-            // roll=data.GetInt32(0);
-            // name=data.GetString(1);
-            // address=data.GetString(2);
+            // Use one of the Method
+            // int roll=data.GetInt32("roll");
+            // string name=data.GetString("name");
+            // string address=data.GetString("address");  
+
+            // Use One Of The Method 
+            int roll=data.GetInt32(0);
+            string name=data.GetString(1);
+            string address=data.GetString(2);
             Console.WriteLine("{0}\t{1}\t{2}\t",roll,name,address);
         }
     }
