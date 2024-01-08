@@ -1,2 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using MySql.Data.MySqlClient;
+class Program{
+    static void Main(){
+        string connectingstring = "SERVER=localhost;DATABASE=BCA;UID=root;PASSWORD=;";
+        MySqlConnection con = new MySqlConnection(connectingstring);
+        con.Open();
+        string readdata="SELECT * FROM Student;";
+        MySqlCommand cmd = new MySqlCommand(readdata,con);
+        MySqlDataReader data = cmd.ExecuteReader();
+        Console.WriteLine("Roll\tName\tAddress");
+        while(data.Read()){
+            int roll=data.GetInt32("roll");
+            string name=data.GetString("name");
+            string address=data.GetString("address");   
+            // roll=data.GetInt32(0);
+            // name=data.GetString(1);
+            // address=data.GetString(2);
+            Console.WriteLine("{0}\t{1}\t{2}\t",roll,name,address);
+        }
+    }
+}
