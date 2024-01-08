@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataInsert")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+573243f0155a45731cab693ecf3b4b8455487a24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d95420727d07923e1089f9385c38140710605be")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataInsert")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataInsert")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
