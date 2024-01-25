@@ -21,7 +21,7 @@ class Employee{
         this.salary=salary;
     }
 }
-class LINQQuery1{
+class LINQQuery{
     static void Main(){
         List<Employee> list = new List<Employee>();
         list.Add(new Employee(1,"Rohit",25,"KTM",20000));
@@ -35,9 +35,8 @@ class LINQQuery1{
                     where x.salary>20000 && x.age<35
                     select new{x.name,x.age};
         Console.WriteLine("Name And Age of Employees whose salary>20000 and age < 35");
-        foreach (var item in res1){
+        foreach (var item in res1)
             Console.WriteLine("{0}\t{1}",item.name,item.age);
-        }
 
         // // Select all records of employees whose name starts with letter ‘R’ and age greater than 25 in descending order based on age.
         var res2 = from x in list
@@ -45,9 +44,8 @@ class LINQQuery1{
                     orderby x.age descending
                     select x;
         Console.WriteLine("Records of Employee whose name starts with letter ‘R’ and age>25 in descending order based on age:");
-        foreach (var item in res2){
+        foreach (var item in res2)
             Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
-        }
         
         // Select all records of employee whose salary is maximum.
         var res3 = from x in list
@@ -57,18 +55,16 @@ class LINQQuery1{
                     ).Max()
                     select x;
         Console.WriteLine("Records of Employee whose salary is maximum:");
-        foreach (var item in res3){
+        foreach (var item in res3)
             Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
-        }
 
         // Select id and name of employee whose salary is between 20000 and 30000.
         var res4 = from x in list
                     where x.salary>=20000 && x.salary<=30000
                     select new{x.id,x.name};
         Console.WriteLine("Id and Name of Employee whose salary is between 20000 and 30000:");
-        foreach (var item in res4){
+        foreach (var item in res4)
             Console.WriteLine("{0}\t{1}",item.id,item.name);
-        }
 
         // Select id and name of employees whose address is Btm and salary is greater than average salary of employees.
         var res5 = from x in list
@@ -78,9 +74,8 @@ class LINQQuery1{
                     ).Average()
                     select new{x.id,x.name};
         Console.WriteLine("Id and Name of Employees whose address = Btm and salary > average");
-        foreach (var item in res5){
+        foreach (var item in res5)
             Console.WriteLine("{0}\t{1}",item.id,item.name);
-        }
 
         // Select records of employee group by address in ascending order based on age.
         var res6 = from x in list
@@ -89,11 +84,8 @@ class LINQQuery1{
         Console.WriteLine("Records of Employee group by address in ascending order based on age:");
         foreach (var items in res6){
             Console.WriteLine("Address: {0}",items.Key);
-            foreach (var item in items){
+            foreach (var item in items)
                 Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",item.id,item.name,item.age,item.address,item.salary);
-            }
         }
-
-
     }
 }

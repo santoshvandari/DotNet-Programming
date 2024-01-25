@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 class DisplayNumberLINQ{
     static void Main(){
-        List<int> list = new List<int>(){100,30,80,180,470,48,48,6958,65,8,69,55,105,140,65,4,165,21,1,58,4,65,4,8};
+        List<int> list = new List<int>(){100,30,80,180,470,48,480,6958,65,8,69,55,105,140,65,4,165,21,1,58,4,65,4,8};
         var filteredData=from x in list
                             where x > 80
                             orderby x descending

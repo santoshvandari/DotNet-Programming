@@ -26,7 +26,7 @@ class JoinLINQ{
         std.Add(new Student(1,"Rahul","KTM",1));
         std.Add(new Student(2,"Raj","KVT",2));
         std.Add(new Student(3,"Ravi","BTM",1));
-        std.Add(new Student(4,"Rahul","BRT",3));
+        std.Add(new Student(4,"Rishi","BRT",3));
         std.Add(new Student(5,"KRishna","BTM",2));
         List<Course> crs=new List<Course>();
         crs.Add(new Course(1,"C#"));
@@ -36,11 +36,10 @@ class JoinLINQ{
                     join y in crs
                     on x.cid equals y.cid
                     where y.cname=="C#"
-                    select new{x.sname,y.cname};
-        Console.WriteLine("Name\tCourse");
-        foreach (var data in res){
-            Console.WriteLine("{0}\t{1}",data.sname,data.cname);
-        }
-
+                    select new{x.sname,x.address,y.cname};
+        Console.WriteLine("Name\tAddress\tCourse");
+        foreach (var data in res)
+            Console.WriteLine("{0}\t{1}\t{2}",data.sname,data.address,data.cname);
+        
     }
 }
