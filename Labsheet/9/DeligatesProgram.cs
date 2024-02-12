@@ -11,6 +11,6 @@ class DelegatesProgram{
     static void Main(){
         Calculation calc=new Calculation(Sum);
         calc+=Product; 
-        calc(10, 20);
+        calc(10, 30);
     }
 }
