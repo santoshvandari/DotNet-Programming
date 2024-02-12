@@ -8,7 +8,10 @@ public class Display{
     }
     public void DisplayInfo(){
         Console.WriteLine("Name : {0}\nAddress : {1}\nFaculty : {2}",name,address,faculty);
-    } 
+    }
+    ~Display(){
+        Console.WriteLine("Object Deleted Successfully");
+    }
 }
 class ConstructorCS{
     public static void Main(){
