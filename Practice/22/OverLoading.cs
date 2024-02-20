@@ -3,7 +3,7 @@ class A{
     public void Add(int x, int y){
         Console.WriteLine("Sum : {0}",(x+y));
     }
-    public void Add(float x, float y){
+    public void Add(double x, double y){
         Console.WriteLine("Sum : {0}",(x+y));
     }
 }
