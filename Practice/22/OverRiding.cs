@@ -6,6 +6,7 @@ class A{
 }
 class B : A{
     public override void Display(){
+        base.Display();
         Console.WriteLine("Child Class ");
     }
 }
