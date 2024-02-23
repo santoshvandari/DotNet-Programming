@@ -2,13 +2,14 @@
 
 using System;
 class Person{
-    public static string Name;
-    static Person(){
-        Name = "John";
+    public string Name;
+    public Person(string Name){
+        this.Name = Name;
     }
 }
 class Program{
     static void Main(){
-        Console.WriteLine("Name of the Person : " + Person.Name);
+        Person p = new Person("John");
+        Console.WriteLine("Name of the Person : " + p.Name);
     }
 }
