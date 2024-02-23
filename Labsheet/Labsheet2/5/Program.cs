@@ -3,9 +3,9 @@
 using System;
 class Rectangle{
     private int length,breadth;
-    public Rectangle(int l,int b){
-        length = l;
-        breadth = b;
+    public Rectangle(){
+        length = 100;
+        breadth = 200;
     }
     public void Area(){
         Console.WriteLine($"Area of Rectangle : {this.length*this.breadth}");
@@ -13,7 +13,7 @@ class Rectangle{
 }
 class Program{
     static void Main(){
-        Rectangle r = new Rectangle(100,200);
+        Rectangle r = new Rectangle();
         r.Area();
     }
 }
