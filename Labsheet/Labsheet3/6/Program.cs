@@ -15,9 +15,6 @@ class Program{
         for(int i=0; i<ds.Tables[0].Rows.Count; i++){
             Console.WriteLine(ds.Tables[0].Rows[i][1] + " " + ds.Tables[0].Rows[i][2]);
         }
-        foreach(row in ds.Tables[0].Rows){
-            Console.WriteLine(row[1] + " " + row[2]);
-        }
         con.Close();
     }
 }
