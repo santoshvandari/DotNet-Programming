@@ -2,16 +2,16 @@
 
 using System;
 class Rectangle{
-    protected int length, breadth;
+    int length, breadth;
     public Rectangle(int l, int b){
         length = l;
         breadth = b;
     }
     public void Area(){
-        Console.WriteLine("Area of Rectangle is: " + (length * breadth));
+        Console.WriteLine("Area: " + (length * breadth));
     }
     public void Perimeter(){
-        Console.WriteLine("Perimeter of Rectangle is: " + (2 * (length + breadth)));
+        Console.WriteLine("Perimeter: " + (2 * (length + breadth)));
     }
 }
 class Square : Rectangle{

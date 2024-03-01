@@ -30,11 +30,7 @@ class Program{
         e.Address = "123, Street";
         e.Salary = 50000;
         e.Specialization = "Software Developer";
-        Console.WriteLine("Employee Details:");
-        Console.WriteLine("Name: " + e.Name);
-        Console.WriteLine("Age: " + e.Age);
-        Console.WriteLine("Phone Number: " + e.PhoneNumber);
-        Console.WriteLine("Address: " + e.Address);
+        Console.WriteLine($"Employee Details:\nName : {e.Name}\nAge : {e.Age}\nPhone Number : {e.PhoneNumber}\nAddress : {e.Address}");
         e.PrintSalary();
         Console.WriteLine("Specialization: " + e.Specialization);
         Manager m = new Manager();
@@ -44,11 +40,7 @@ class Program{
         m.Address = "456, Avenue";
         m.Salary = 100000;
         m.Department = "IT";
-        Console.WriteLine("Manager Details:");
-        Console.WriteLine("Name: " + m.Name);
-        Console.WriteLine("Age: " + m.Age);
-        Console.WriteLine("Phone Number: " + m.PhoneNumber);
-        Console.WriteLine("Address: " + m.Address);
+        Console.WriteLine($"Manager Details:\nName : {m.Name}\nAge : {m.Age}\nPhone Number : {m.PhoneNumber}\nAddress : {m.Address}");
         m.PrintSalary();
         Console.WriteLine("Department: " + m.Department);
     }
