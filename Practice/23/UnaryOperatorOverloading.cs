@@ -2,8 +2,7 @@
 using System;
 class operatoroverload{
     private int a,b;
-    public operatoroverload(){
-    }
+    public operatoroverload(){ }
     public operatoroverload(int x, int y){
         a=x;
         b=y;
@@ -11,10 +10,10 @@ class operatoroverload{
     public void dispValue(){
         Console.WriteLine($"A : {a}, B : {b}");
     }
-    public static operatoroverload operator -(operatoroverload c){
+    public static operatoroverload operator -(operatoroverload obj){
         operatoroverload temp = new operatoroverload();
-        temp.a=-c.a;
-        temp.b=-c.b;
+        temp.a=-obj.a;
+        temp.b=-obj.b;
         return temp;
     }
 }

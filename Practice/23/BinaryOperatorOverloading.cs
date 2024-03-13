@@ -9,8 +9,8 @@ class OperatorOverload{
     }
     public static OperatorOverload operator +(OperatorOverload a, OperatorOverload b){
         OperatorOverload temp = new OperatorOverload();
-        temp.x=a.x+a.x;
-        temp.y=a.y+a.y;
+        temp.x=a.x+b.x;
+        temp.y=a.y+b.y;
         return temp;
     }
     public void dispValue(){
@@ -21,7 +21,7 @@ class BinaryOperatorOverloading{
     static void Main(){
         OperatorOverload obj1=new OperatorOverload(10,20);
         obj1.dispValue();
-        OperatorOverload obj2=new OperatorOverload();
+        OperatorOverload obj2=new OperatorOverload(5,10);
         obj2.dispValue();
         obj2 = obj1+obj2;
         obj2.dispValue();
