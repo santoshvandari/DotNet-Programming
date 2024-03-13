@@ -13,7 +13,7 @@
          <asp:Label runat="server" Text="Second Number"></asp:Label>
   <asp:TextBox ID="secondnum" runat="server"></asp:TextBox><br />
         <asp:Label ID="result" runat="server" Text="Result : "></asp:Label><br /><br />
-        <asp:Button ID="submit" runat="server" Text="Calculate" onClick="CalculateSum" />
+        <asp:Button ID="submit" runat="server" Text="Get Result" onClick="CalculateSum" />
     </form>
 </body>
 </html>
