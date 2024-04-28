@@ -1,4 +1,7 @@
-/*Write a C# program to create a class Time Which represnt time. The Class Should Have three fields for hours,minutes and seconds. It should have constructor to initialize hours,minutes and seconds and method displayTime() to print current time. Overload following Operators: 
+/*Write a C# program to create a class Time Which represnt time. 
+The Class Should Have three fields for hours,minutes and seconds. 
+It should have constructor to initialize hours,minutes and seconds and method displayTime() 
+to print current time. Overload following Operators: 
 a) + (add two time objects on 24 hours clock)
 b) < (Compare two time objects)
 */
