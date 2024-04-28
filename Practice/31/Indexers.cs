@@ -17,7 +17,7 @@ class Indexers{
             obj[i]=i+20;
         }
         for(int i =0;i<10;i++){
-           Console.WriteLine("Value of {0}: {1}",i,obj[i]);
+            Console.WriteLine("Value of {0}: {1}",i,obj[i]);
         }
         
     }  
