@@ -1,0 +1,5 @@
+/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/33/Database/obj/Debug/net8.0/Database.GeneratedMSBuildEditorConfig.editorconfig
+/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/33/Database/obj/Debug/net8.0/Database.AssemblyInfoInputs.cache
+/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/33/Database/obj/Debug/net8.0/Database.AssemblyInfo.cs
+/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/33/Database/obj/Debug/net8.0/Database.csproj.CoreCompileInputs.cache
+/home/wabisabi/Desktop/BCA Practical/DotNet/Practice/33/Database/obj/Debug/net8.0/Database.sourcelink.json
