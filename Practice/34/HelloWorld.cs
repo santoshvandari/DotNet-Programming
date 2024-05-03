@@ -7,6 +7,6 @@ class Hello{
 class HelloWorld{
     static void Main(){
         Hello obj = new Hello();
-        Console.WriteLine("HEllo World");
+        Console.WriteLine(obj.Welcome() + " Hello World");
     }
 }
