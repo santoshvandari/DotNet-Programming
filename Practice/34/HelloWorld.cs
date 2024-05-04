@@ -1,12 +1,20 @@
 using System;
 class Hello{
-    public string Welcome(){
+    public virtual string Welcome(){
         return "Welcome,";
     }
 }
-class HelloWorld{
+class HelloWorld:Hello{
+    public override string Welcome(){
+        return "Welcome, Santosh Bhandari";
+    }
+
     static void Main(){
-        Hello obj = new Hello();
-        Console.WriteLine(obj.Welcome() + " Hello World");
+        HelloWorld obj = new HelloWorld();
+        Hello obj1 = new Hello();
+        
+        Console.WriteLine("{0} Hello World",obj1.Welcome());
+        Console.WriteLine(obj.Welcome());
+        
     }
 }
