@@ -1,4 +1,7 @@
-# Setting the Code Runner
+# DotNet Technology
+BCA Fifth Semester Dotnet Technology Programming Collections.
+
+## Setting the Code Runner
 
 ### Setting in Windows
   Add the Follow Line in Code runner Setting File
